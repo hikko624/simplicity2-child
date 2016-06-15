@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Simplicity2 child
+Template:   simplicity2
+Version:    20151225
+*/
+
+/* Simplicity子テーマ用のスタイルを書く */
+
+/*ヘッダーデザインここから*/
+
+.article h1 {
+    margin-top:28px;
+    margin-bottom:0px; /*下余白*/
+    font-size: 27px;
+    line-height:100%;
+    border-left: 8px solid #ff0000;
+    border-bottom:dotted 0px #ff0000;
+    line-height: 32px;
+    padding-left: 15px; 
+    padding:14px 22px; 
+    color:#333333; 
+}#archive-title{
+    padding-bottom:20px;
+    font-size:26px;
+}
+
+.article h2 ,
+#comment-area h2,
+#related-entries h2{
+    border-left:6px solid #ff0000;
+    margin: 40px -29px 20px;
+    padding:16px 24px; /*solid　縦、？*/
+    font-size:24px;
+}
+
+.article h3{
+    font-size:21px;
+    border-bottom:2px solid #ff0000;
+    padding:10px 0px 10px 0px;
+    margin:0px 0px 40px 0px;
+}
+
+.article h4, .article h5, .article h6{
+    font-size:20px;
+    padding:8px 0;
+}
+
+.article  h4{
+    border-bottom:5px dashed #eee;
+}
+
+/*ヘッダーデザインここまで*/
+
+/*続きを読むボタンのデザインここから*/
+.entry-read a{
+    color:#ffffff;
+    font-size:14px;
+    background-color:#ff0000;
+    border:1px solid ffdddd;
+    border-radius:2px;
+    padding:3px 10px 3px 5px;
+    text-decoration:none;
+}
+.entry-read a:hover{
+    color:#ff0000;
+    background-color: #ffdddd;
+    border:1px solid #ff0000;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    transition:all 0.3s;
+}
+.entry-read a::before{
+    margin-right:5px;
+    font-family:"FontAwesome";
+    content:"\f06e";
+}
+/*続きを読むボタンのデザインここまで*/
+
+/*****************************
+ * *カレンダーに枠を付ける
+ * *****************************/
+#wp-calendar {
+    border-collapse: collapse;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-top-color: #999;
+    border-right-color: #999;
+    width: 250px;
+    margin-left: 35px;
+}
+#wp-calendar thead tr th {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-color: #999;
+    border-left-color: #999;
+}
+
+/*土曜日のヘッダーセル*/
+#wp-calendar thead tr th:nth-child(6){
+    background-color: #C0DDF9;
+}
+
+/*日曜日のヘッダーセル*/
+#wp-calendar thead tr th:nth-child(7){
+    background-color: #F5D0D3;
+}
+
+#wp-calendar td {
+    text-align: center;
+    padding: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-color: #999;
+    border-left-color: #999;
+
+}
+#wp-calendar caption {
+    font-weight: bold;
+    text-align: left;
+}
+#wp-calendar tbody tr #today {
+    background-color: #CCC;
+}
